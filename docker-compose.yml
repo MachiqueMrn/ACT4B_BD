@@ -1,0 +1,16 @@
+services:
+  postgres:
+    build: ./DBconfiguration
+    container_name: base_datos_tramites
+    ports:
+      - "5432:5432" 
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password123
+      POSTGRES_DB: sistema_tramites
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+    driver: local
