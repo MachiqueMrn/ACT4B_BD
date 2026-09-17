@@ -4,7 +4,6 @@ import modelo.Ciudadano;
 import modelo.SolicitudLicencia;
 import modelo.Requisito;
 
-import modelo.Ciudadano;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
